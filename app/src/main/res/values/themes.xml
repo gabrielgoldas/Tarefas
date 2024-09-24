@@ -1,8 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Tarefas" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Tarefas" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Primary brand color -->
+         <item name="colorPrimary">@color/primaria</item>
+         <item name="colorPrimaryVariant">@color/primaria_variacao</item>
+         <item name="colorOnPrimary">@color/white</item>
+         <item name="colorPrimaryDark">@color/fundo</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/secundaria</item>
+        <item name="colorSecondaryVariant">@color/secundaria_variacao</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Background color -->
+        <item name="android:windowBackground">@color/fundo</item>
+
     </style>
 
     <style name="Theme.Tarefas" parent="Base.Theme.Tarefas" />
