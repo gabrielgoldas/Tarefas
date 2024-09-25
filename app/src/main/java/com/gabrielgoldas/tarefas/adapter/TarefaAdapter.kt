@@ -7,7 +7,8 @@ import com.gabrielgoldas.tarefas.databinding.ItemTarefaBinding
 import com.gabrielgoldas.tarefas.model.Tarefa
 
 class TarefaAdapter(
-    val onClickExcluir: (Int) -> Unit
+    val onClickExcluir: (Int) -> Unit,
+    val onClickEditar: (Tarefa) -> Unit
 ) : RecyclerView.Adapter<TarefaAdapter.TarefaViewHolder>() {
 
     private var listaTarefas: List<Tarefa> = emptyList()
@@ -33,6 +34,11 @@ class TarefaAdapter(
             binding.btnExcluir.setOnClickListener {
                 onClickExcluir(tarefa.idTarefa)
             }
+
+            binding.btnEditar.setOnClickListener {
+                onClickEditar(tarefa)
+            }
+
         }
 
     }
