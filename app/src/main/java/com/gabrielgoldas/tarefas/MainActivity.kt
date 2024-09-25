@@ -1,12 +1,14 @@
 package com.gabrielgoldas.tarefas
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -32,6 +34,9 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        window.statusBarColor = ContextCompat.getColor(this,R.color.status_bar)
+        window.navigationBarColor = ContextCompat.getColor(this, R.color.fundo)
 
         binding.fabAdicionar.setOnClickListener {
             val intent = Intent(this, AdicionarTarefaActivity::class.java)

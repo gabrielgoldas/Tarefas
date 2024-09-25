@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.gabrielgoldas.tarefas.database.TarefaDAO
@@ -20,6 +21,9 @@ class AdicionarTarefaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        window.statusBarColor = ContextCompat.getColor(this,R.color.status_bar)
+        window.navigationBarColor = ContextCompat.getColor(this, R.color.fundo)
 
         // Recuperar tarefa passada
         var tarefa: Tarefa? = null

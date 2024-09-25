@@ -1,12 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Tarefas" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Base.Theme.Tarefas" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your light theme here. -->
         <!-- Primary brand color -->
          <item name="colorPrimary">@color/primaria</item>
          <item name="colorPrimaryVariant">@color/primaria_variacao</item>
          <item name="colorOnPrimary">@color/white</item>
-         <item name="colorPrimaryDark">@color/fundo</item>
+         <!--<item name="colorPrimaryDark">@color/fundo</item>-->
 
         <!-- Secondary brand color -->
         <item name="colorSecondary">@color/secundaria</item>
