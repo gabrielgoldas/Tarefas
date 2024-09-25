@@ -1,4 +1,7 @@
 package com.gabrielgoldas.tarefas.model
 
-class Tarefa {
-}
+data class Tarefa (
+    val idTarefa: Int,
+    val descricao: String,
+    val dataCadastro: String
+)
